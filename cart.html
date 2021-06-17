@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        .nav1,
+        .nav2 {
+            border: 2px solid indianred;
+
+            margin-bottom: 1px;
+            height: 48px;
+            width: auto;
+
+            padding: 10px;
+            /* padding-bottom: 10px; */
+
+            text-transform: uppercase;
+
+        }
+
+        .nav1{
+            position: sticky;
+            top: 0px;
+        }
+
+        .nav2{
+            
+            position: sticky;
+            top: 48px;
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+        }
+
+        .nav2 a {
+            color: rgb(236, 53, 154);
+        }
+
+        li {
+            float: left;
+            list-style-type: none;
+        }
+
+        .nav1 a:hover {
+            background-color: white; 
+            color: rgb(236, 53, 154)
+             /* !important; */
+        }
+
+        .nav2 a:hover {
+            background-color: rgb(236, 53, 154);
+            color: white;
+        }
+
+        .flr {
+            float: right;
+            text-align: right;
+        }
+
+        /* done using mozilla firefox */
+        .searchbar{
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 10px;
+            width: 250px;
+        }
+
+        .dx{
+            background-image: url("https://docs.google.com/uc?id=14Eep1NfAeqT1W78I9IMiXQsKFweF9D0q");
+            background-size: contain;
+            /* opacity: 0.6; */
+            height: 1300px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header{
+            height: 200px;
+            width: auto;
+            background-image: url("https://docs.google.com/uc?id=1H9LKqky7IFciW0QQcBy0HTcwASP-SPB9");
+        }
+
+        .box{
+            background-color: rgb(252, 248, 233);
+            border: 2px solid red;
+            display: grid;
+            
+            height: 900px;
+            width: 1200px;
+            /* grid-gap: 9px; */
+
+            grid-template-columns: 1200px;
+            grid-template-rows: repeat(3,300px);
+            /* flex-wrap: wrap; */
+        }
+
+        .cx{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .crt{
+            /* padding:9px; */
+            display: grid;
+            grid-template-columns: 450px 750px;
+            grid-template-rows: 300px 300px;
+        }
+
+        #two, #four{
+            padding-top: 60px;
+        }
+
+        img{
+            height: 270px;
+            width: 270px;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="nav1" style="background-color: rgb(236, 53, 154); color: white;">
+        <ul>
+            <li><img src="https://docs.google.com/uc?id=1H9LKqky7IFciW0QQcBy0HTcwASP-SPB9"
+                style="height: 30px; width: 100px; padding-left: 3px; padding-top: 0px; padding-right: 10px;"></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#About-Us">ABOUT US</a></li>
+            <li><a href="index.html#contact-us">Contact Us</a></li>
+            <li class="flr"><a href="signin.html">Sign in</a></li>
+        </ul>
+    </nav>
+    <nav class="nav2" style="background-color: white; color: rgb(236, 53, 154);">
+        <ul>
+            <li><a href="#">Cart</a></li>
+            <li><a href="offer.html">today's offer</a></li>
+            <li style="padding-left: 10px;"><input class="searchbar" type="text" placeholder="Type Dishes"></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <!-- <li><a href="#"> Search</a></li> -->
+            <li class="flr" style="float: right;"><a href="logout.html">Logout</a></li>
+            <li class="flr"><a href="tokens.html">Tokens</a></li>
+        </ul>
+    </nav>
+    <header></header>
+
+    <div class="dx">
+        
+        <div class="box">
+            <div class="cx">
+                <h1 style="font-size: 72px;">Your Cart<i class="fas fa-shopping-cart" style="padding-left: 35px;"></i></h1>
+            </div>
+            <div class="crt">
+                <div class="crt_ch1" id="one"><img src="https://docs.google.com/uc?id=1j-cFKksy444V0MX9niNHzuu79i45k8Sw" alt="sorry network error"></div>
+                <div class="crt_ch2" id="two">
+                    <h4>Item : Creamy Choco Muffins covered with tasty Choco chips </h4>
+                    <h4>Price : &nbsp; <i class="fas fa-rupee-sign"> &nbsp; 80</i><h4>
+                    <label><h4>Quantity</h4></label>
+                    <input type="number" value="0" min="0" max="100"><br>
+                    <h4>Delivery charge : &nbsp; <i class="fas fa-rupee-sign"> &nbsp; 35</i></h4>
+                </div>
+            </div>
+            <div class="crt">
+                <div class="crt_ch1" id="three"><img src="https://docs.google.com/uc?id=14Eep1NfAeqT1W78I9IMiXQsKFweF9D0q" alt="sorry network error"></div>
+                <div class="crt_ch2" id="four">
+                    <h4>Item : Creamy Vanilla Muffins With Caramel</h4>
+                    <h4>Price : &nbsp; <i class="fas fa-rupee-sign"> &nbsp; 100</i><h4>
+                    <label><h4>Quantity</h4></label>
+                    <input type="number" value="0" min="0" max="100"><br>
+                    <h4>Delivery charge : &nbsp; <i class="fas fa-rupee-sign"> &nbsp; 40</i></h4>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

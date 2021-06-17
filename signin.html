@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+  <style>
+    .nav1,
+    .nav2 {
+      border: 2px solid indianred;
+
+      margin-bottom: 1px;
+      height: 48px;
+      width: auto;
+
+      padding: 10px;
+
+      text-transform: uppercase;
+    }
+    
+    .nav1{
+            position: sticky;
+            top: 0px;
+        }
+
+        .nav2{
+            
+            position: sticky;
+            top: 48px;
+        }
+
+    li a {
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .nav1 a {
+      color: white;
+    }
+
+    .nav2 a {
+      color: rgb(236, 53, 154);
+    }
+
+    li {
+      float: left;
+      list-style-type: none;
+    }
+
+    .nav1 a:hover {
+      background-color: white;
+      color: rgb(236, 53, 154);
+    }
+
+    .nav2 a:hover {
+      background-color: rgb(236, 53, 154);
+      color: white;
+    }
+
+    .flr {
+      float: right;
+      text-align: right;
+    }
+
+            /* done using mozilla firefox */
+            .searchbar {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 10px;
+            width: 250px;
+        }
+
+  </style>
+
+</head>
+
+<body>
+  <!-- <h1>Hello, world!</h1> -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+      -->
+
+  <nav class="nav1" style="background-color: rgb(236, 53, 154); color: white;">
+    <ul>
+      <li><img src="https://docs.google.com/uc?id=1H9LKqky7IFciW0QQcBy0HTcwASP-SPB9"
+          style="height: 30px; width: 90px; padding-left: 3px; padding-top: 0px; padding-right: 10px;"></li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#About-Us">ABOUT US</a></li>
+      <li><a href="index.html#contact-us">Contact Us</a></li>
+      <li class="flr"><a href="#">Sign in</a></li>
+    </ul>
+  </nav>
+  <nav class="nav2" style="background-color: white; color: rgb(236, 53, 154);">
+    <ul>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="offer.html">today's offer</a></li>
+      <!-- <li><a href="#"></a></li> -->
+      <li style="padding-left: 10px;"><input class="searchbar" type="text" placeholder="Type Dishes"></li>
+      <li><a href="#"><i class="fas fa-search"></i></a></li>
+      <li class="flr" style="float: right;"><a href="logout.html">Logout</a></li>
+      <li class="flr"><a href="tokens.html">Tokens</a></li>
+    </ul>
+  </nav>
+
+  <div style="padding: 100px; background-color: rgb(219, 80, 103); height: 1000px;">
+
+
+
+
+
+    <h2
+      style=" color: black; align-items: center; padding-bottom: 60px; padding-left: 500px;font-size: 75px; font-family: 'Baloo Tammudu 2', cursive;">
+      SIGN IN</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="abcxyz@gmail.com">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary"
+          style="background-color: white; color: rgb(247, 99, 123);"><strong>Cherry</strong></button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    
+    <style>
+        .nav1,
+        .nav2 {
+            border: 2px solid indianred;
+
+            margin-bottom: 1px;
+            height: 48px;
+            width: auto;
+
+            padding: 10px;
+            /* padding-bottom: 10px; */
+
+            text-transform: uppercase;
+        }
+        
+        .nav1{
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        .nav2{
+            
+            position: sticky;
+            top: 48px;
+            z-index: 1;
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+        }
+
+        .nav2 a {
+            color: rgb(236, 53, 154);
+        }
+
+        .nav1 li,.nav2 li {
+            float: left;
+            list-style-type: none;
+        }
+        .nav1 a:hover {
+            background-color: white;
+            color: rgb(236, 53, 154);
+        }
+
+        .nav2 a:hover {
+            background-color: rgb(236, 53, 154);
+            color: white;
+        }
+
+        .nav1 .flr, .nav2 .flr {
+            float: right;
+            text-align: right;
+        }
+
+        /* done using mozilla firefox */
+        .searchbar{
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 10px;
+            width: 250px;
+        }
+
+        .dx {
+            display: flex;
+            height: 700px;
+            width: auto;
+            /* background-color: burlywood;
+                background-image: url("amz.jpg"); */
+            background-size: contain;
+
+            align-items: flex-end;
+            justify-content: space-evenly;
+            padding-bottom: 10px;
+        }
+
+        .invi {
+            height: 500px;
+            width: 70px;
+        }
+
+        .bx {
+            /* background-color: blueviolet; */
+            /* background-size: cover; */
+
+            height: 400px;
+            width: 320px;
+
+            display: grid;
+            /* grid-gap: 9px; */
+            grid-template-columns: 300px;
+            grid-template-rows: 50px 150px 150px;
+            /* background-color: rgb(252, 230, 104); */
+            background-color: transparent;
+            /* border: 3px solid black; */
+
+            /* opacity: 0.85; */
+        }
+
+        a img {
+            height: 150px;
+            width: 150px;
+            padding: 10px 10px 10px 10px;
+            /* opacity: 0.7; */
+        }
+
+        .dot{
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 150px;
+        }
+
+        img {
+            height: 750px;
+            /* height: auto; */
+            width: auto;
+        }
+
+        .gg {
+            padding: 10px;
+            justify-content: center;
+            /* border: 2px solid black; */
+            /* border:2px solid chartreuse; */
+            /* box-shadow: 3px 3px 3px tomato; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <nav class="nav1" style="background-color: rgb(236, 53, 154); color: white;">
+        <ul>
+            <li><img src="https://docs.google.com/uc?id=1H9LKqky7IFciW0QQcBy0HTcwASP-SPB9"
+                    style="height: 30px; width: 100px; padding-left: 3px; padding-top: 0px; padding-right: 10px;"></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#About-Us">ABOUT US</a></li>
+            <li><a href="#contact-us">contact us</a></li>
+            <li class="flr"><a href="signin.html">Sign in</a></li>
+        </ul>
+    </nav>
+    <nav class="nav2" style="background-color: white; color: rgb(236, 53, 154);">
+        <ul>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="offer.html">today's offer</a></li>
+            <li style="padding-left: 10px;"><input class="searchbar" type="text" placeholder="Type Dishes"></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <!-- <li><a href="#"> Search</a></li> -->
+            <li class="flr" style="float: right;"><a href="logout.html">Logout</a></li>
+            <li class="flr"><a href="tokens.html">Tokens</a></li>
+        </ul>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://docs.google.com/uc?id=1a_k7wF5cPxRRQz4Hd6IeBpkx5Tiv9GZ4" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://docs.google.com/uc?id=1nT-ma3WWawewy8GHb8mhUPF64BUYJgS7" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <div class="dummy"></div> -->
+                    <div class="dx" style="padding-left: 120px;">
+                        <div class="bx">
+                            <div style="color: white; font-size: 36px;">Available Items</div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1RjJdTuvAM4rMIawv1_5KxYEuYToecY80" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1j-cFKksy444V0MX9niNHzuu79i45k8Sw" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=14Eep1NfAeqT1W78I9IMiXQsKFweF9D0q" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1PBDA67UIAUacM_j56iTMEtLtgQb0o6LU" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                        </div>
+
+                        <div class="bx">
+                            <div style="color: white; font-size: 36px;">Available Items</div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1oOpVDt2jL8T25ComV7LeAfnBel5r_WnY" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1gFr3iFxqF5cyFrMXdMC_YZ-O6QpaSarW" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1QFYnuJ2esZf41Nf74Pw98y6DD-qH-s8f" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1GTrxn-0pV5v27E0T-BsU91LcURZe__wl" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://docs.google.com/uc?id=1MAnkG5gkZbOL9J_xKzHkJK7YakN9N4h4" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <div class="dummy"></div> -->
+                    <div class="dx" style="padding-left: 120px;">
+                        
+                        <div class="bx">
+                            <div style=" color:rgb(151, 12, 93); font-size: 36px;">Available Items</div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1waRv8iZ2fsiYNa3gRObl3f4FJLgs2znP" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1CxoExrVjv-DjfDmBYNnFUlpgsqzt7ADG" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1AUbP1KRVuhMEPZ7y6dHgjMSvjRIOfsKJ" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1evq9lVCM7DAEenxY_k7u7ccb4eu9Hao9" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                        </div>
+
+                        <div class="bx">
+                            <div style=" color:rgb(209, 14, 128); font-size: 36px;">Available Items</div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1cR7r-ZKhTs5nQuhAEC746FHV8IqWcfIz" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1K6_vZi56EHSztJZ5jYPswgKUTm9v0vMp" title="Price &#x20B9; 120"></a></div>
+                            </div>
+                            <div class="dot">
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1kDFTXv1Et1KwtTQfi8t6ysPaF60mwCJu" title="Price &#x20B9; 120"></a></div>
+                                <div class="gg"><a><img src="https://docs.google.com/uc?id=1ik8OoRYElL6uJuuYRDo-BzAFls75ZVyU" title="Price &#x20B9; 120"></a></div>
+                 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="About-Us" name="About-Us" style="height: 830px; width: auto; background-color: rgb(248, 239, 187);">
+        <header style="font-size: 54px; font-family: 'Stylish', sans-serif; padding-left: 35px;">
+            <br>
+            About Us
+        </header>
+            <p class="abt" style="padding-left: 20px; float: left;  font-family: 'Stylish', sans-serif; font-size: 14;">
+                <img src="https://docs.google.com/uc?id=1d0DXTcr28-s3flX3WYdrcWl3jlK0D2h8" alt="network issues" style="height: 400px; width: 400px; float: left; padding: 10px 20px 10px;">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam dolorum quibusdam veniam est deserunt saepe, eum sed quidem tempora velit iusto, eligendi inventore quaerat aut, molestias iste asperiores unde? Reprehenderit officia ad minus a? Rerum corrupti iusto temporibus ipsa!<br>
+            </p>
+            <p style="padding-left: 10px; font-size: 30px;  font-family: 'Stylish', sans-serif; font-size: 14;">
+                Timing  : 
+                <ul style="font-size: 20px; font-family: 'Stylish', sans-serif; font-size: 14; padding-bottom: 40px;">
+                    <li>Monday - Wednesday 8:00 AM - 8:00 PM</li>
+                    <li>Friday - Sunday 8:00 AM - 8:00 PM</li>
+                    <li>Thursday Closed - We also need rest &nbsp; <i class="far fa-smile-wink"></i> &nbsp;</li>
+                </ul>
+            </p>
+        
+    </section>
+
+    <div id="contact-us" style="display: flex; height: 250px; width: auto; justify-content: center; align-items: center; font-family: 'Stylish', sans-serif; font-size: 28px;">
+        <div>
+            Thanks For visiting this website <br>
+        Website Creator & Handler : Mahadev Karmakar<br>
+        Made with <span style="color: blueviolet;"><i class="fas fa-heart"></i></span> And Honey Caramel<br>
+        For suggestions you can mail <a href="mailto:virizion624@gmail.com">here</a><br>
+        For Contacting Creator for Work mail <a href="mailto:virizion624@gmail.com">here</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
